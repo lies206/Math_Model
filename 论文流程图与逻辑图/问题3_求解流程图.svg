@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1780" viewBox="0 0 1900 1780">
+<defs><filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#173B57" flood-opacity="0.12"/></filter>
+<marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#7255B7"/></marker></defs>
+<rect width="1900" height="1780" fill="#F5F8FC"/>
+<rect width="1900" height="165" fill="#4B3475"/>
+<text x="95" y="88" fill="#FFFFFF" font-family="Microsoft YaHei, sans-serif" font-size="50" font-weight="700" text-anchor="start"><tspan x="95" dy="0">问题3｜求解流程图</tspan></text>
+<text x="1805" y="80" fill="#D7E4EF" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="400" text-anchor="end"><tspan x="1805" dy="0">10分钟电量口径 · 可复现优化</tspan></text>
+<text x="95" y="215" fill="#5E6A7D" font-family="Microsoft YaHei, sans-serif" font-size="27" font-weight="400" text-anchor="start"><tspan x="95" dy="0">从原始数据到结果审计的完整计算链</tspan></text>
+<rect x="308" y="260" width="1340" height="130" rx="24" fill="#DCE5EF"/>
+<rect x="300" y="250" width="1340" height="130" rx="24" fill="#FFFFFF" stroke="#CAD5E3" stroke-width="2" filter="url(#shadow)"/>
+<path d="M324,250 H455 V380 H324 Q300,380 300,356 V274 Q300,250 324,250" fill="#EEE8FA"/>
+<circle cx="376" cy="315" r="34" fill="#7255B7"/>
+<text x="376" y="325" fill="#FFFFFF" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700" text-anchor="middle"><tspan x="376" dy="0">1</tspan></text>
+<text x="495" y="299" fill="#4B3475" font-family="Microsoft YaHei, sans-serif" font-size="30" font-weight="700" text-anchor="start"><tspan x="495" dy="0">数据输入</tspan></text>
+<text x="495" y="338" fill="#5E6A7D" font-family="Microsoft YaHei, sans-serif" font-size="23" font-weight="400" text-anchor="start"><tspan x="495" dy="0">读取实际负荷/光伏及0、6、12、18点发布的未来24小时光伏预测</tspan></text>
+<rect x="105" y="293" width="176" height="44" rx="22" fill="#4B3475"/>
+<text x="193" y="323" fill="#FFFFFF" font-family="Microsoft YaHei, sans-serif" font-size="22" font-weight="700" text-anchor="middle"><tspan x="193" dy="0">输入与预处理</tspan></text>
+<line x1="970" y1="388" x2="970" y2="423" stroke="#7255B7" stroke-width="6" marker-end="url(#arrow)"/>
+<rect x="308" y="442" width="1340" height="130" rx="24" fill="#DCE5EF"/>
+<rect x="300" y="432" width="1340" height="130" rx="24" fill="#FFFFFF" stroke="#CAD5E3" stroke-width="2" filter="url(#shadow)"/>
+<path d="M324,432 H455 V562 H324 Q300,562 300,538 V456 Q300,432 324,432" fill="#EEE8FA"/>
+<circle cx="376" cy="497" r="34" fill="#7255B7"/>
+<text x="376" y="507" fill="#FFFFFF" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700" text-anchor="middle"><tspan x="376" dy="0">2</tspan></text>
+<text x="495" y="481" fill="#4B3475" font-family="Microsoft YaHei, sans-serif" font-size="30" font-weight="700" text-anchor="start"><tspan x="495" dy="0">预测展开</tspan></text>
+<text x="495" y="520" fill="#5E6A7D" font-family="Microsoft YaHei, sans-serif" font-size="23" font-weight="400" text-anchor="start"><tspan x="495" dy="0">以发布时刻已观测光伏为锚点，将24个整点预测线性插值到10分钟粒度</tspan></text>
+<rect x="105" y="475" width="176" height="44" rx="22" fill="#4B3475"/>
+<text x="193" y="505" fill="#FFFFFF" font-family="Microsoft YaHei, sans-serif" font-size="22" font-weight="700" text-anchor="middle"><tspan x="193" dy="0">输入与预处理</tspan></text>
+<line x1="970" y1="570" x2="970" y2="605" stroke="#7255B7" stroke-width="6" marker-end="url(#arrow)"/>
+<rect x="308" y="624" width="1340" height="130" rx="24" fill="#DCE5EF"/>
+<rect x="300" y="614" width="1340" height="130" rx="24" fill="#FFFFFF" stroke="#CAD5E3" stroke-width="2" filter="url(#shadow)"/>
+<path d="M324,614 H455 V744 H324 Q300,744 300,720 V638 Q300,614 324,614" fill="#EEE8FA"/>
+<circle cx="376" cy="679" r="34" fill="#7255B7"/>
+<text x="376" y="689" fill="#FFFFFF" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700" text-anchor="middle"><tspan x="376" dy="0">3</tspan></text>
+<text x="495" y="663" fill="#4B3475" font-family="Microsoft YaHei, sans-serif" font-size="30" font-weight="700" text-anchor="start"><tspan x="495" dy="0">0点计划</tspan></text>
+<text x="495" y="702" fill="#5E6A7D" font-family="Microsoft YaHei, sans-serif" font-size="23" font-weight="400" text-anchor="start"><tspan x="495" dy="0">结合因果负荷预测和初始SOC，求解全天基准计划G0与储能轨迹</tspan></text>
+<rect x="105" y="657" width="176" height="44" rx="22" fill="#4B3475"/>
+<text x="193" y="687" fill="#FFFFFF" font-family="Microsoft YaHei, sans-serif" font-size="22" font-weight="700" text-anchor="middle"><tspan x="193" dy="0">建模与求解</tspan></text>
+<line x1="970" y1="752" x2="970" y2="787" stroke="#7255B7" stroke-width="6" marker-end="url(#arrow)"/>
+<rect x="308" y="806" width="1340" height="130" rx="24" fill="#DCE5EF"/>
+<rect x="300" y="796" width="1340" height="130" rx="24" fill="#FFFFFF" stroke="#CAD5E3" stroke-width="2" filter="url(#shadow)"/>
+<path d="M324,796 H455 V926 H324 Q300,926 300,902 V820 Q300,796 324,796" fill="#EEE8FA"/>
+<circle cx="376" cy="861" r="34" fill="#7255B7"/>
+<text x="376" y="871" fill="#FFFFFF" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700" text-anchor="middle"><tspan x="376" dy="0">4</tspan></text>
+<text x="495" y="845" fill="#4B3475" font-family="Microsoft YaHei, sans-serif" font-size="30" font-weight="700" text-anchor="start"><tspan x="495" dy="0">执行与观测</tspan></text>
+<text x="495" y="884" fill="#5E6A7D" font-family="Microsoft YaHei, sans-serif" font-size="23" font-weight="400" text-anchor="start"><tspan x="495" dy="0">执行已确定区间，记录真实SOC、实际光伏和已发生的负荷偏差</tspan></text>
+<rect x="105" y="839" width="176" height="44" rx="22" fill="#4B3475"/>
+<text x="193" y="869" fill="#FFFFFF" font-family="Microsoft YaHei, sans-serif" font-size="22" font-weight="700" text-anchor="middle"><tspan x="193" dy="0">建模与求解</tspan></text>
+<line x1="970" y1="934" x2="970" y2="969" stroke="#7255B7" stroke-width="6" marker-end="url(#arrow)"/>
+<rect x="308" y="988" width="1340" height="130" rx="24" fill="#DCE5EF"/>
+<rect x="300" y="978" width="1340" height="130" rx="24" fill="#FFFFFF" stroke="#CAD5E3" stroke-width="2" filter="url(#shadow)"/>
+<path d="M324,978 H455 V1108 H324 Q300,1108 300,1084 V1002 Q300,978 324,978" fill="#EEE8FA"/>
+<circle cx="376" cy="1043" r="34" fill="#7255B7"/>
+<text x="376" y="1053" fill="#FFFFFF" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700" text-anchor="middle"><tspan x="376" dy="0">5</tspan></text>
+<text x="495" y="1027" fill="#4B3475" font-family="Microsoft YaHei, sans-serif" font-size="30" font-weight="700" text-anchor="start"><tspan x="495" dy="0">6点更新</tspan></text>
+<text x="495" y="1066" fill="#5E6A7D" font-family="Microsoft YaHei, sans-serif" font-size="23" font-weight="400" text-anchor="start"><tspan x="495" dy="0">冻结0—6点决策，以最新预测和当前SOC重优化6—24点后缀</tspan></text>
+<rect x="105" y="1021" width="176" height="44" rx="22" fill="#4B3475"/>
+<text x="193" y="1051" fill="#FFFFFF" font-family="Microsoft YaHei, sans-serif" font-size="22" font-weight="700" text-anchor="middle"><tspan x="193" dy="0">建模与求解</tspan></text>
+<line x1="970" y1="1116" x2="970" y2="1151" stroke="#7255B7" stroke-width="6" marker-end="url(#arrow)"/>
+<rect x="308" y="1170" width="1340" height="130" rx="24" fill="#DCE5EF"/>
+<rect x="300" y="1160" width="1340" height="130" rx="24" fill="#FFFFFF" stroke="#CAD5E3" stroke-width="2" filter="url(#shadow)"/>
+<path d="M324,1160 H455 V1290 H324 Q300,1290 300,1266 V1184 Q300,1160 324,1160" fill="#EEE8FA"/>
+<circle cx="376" cy="1225" r="34" fill="#7255B7"/>
+<text x="376" y="1235" fill="#FFFFFF" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700" text-anchor="middle"><tspan x="376" dy="0">6</tspan></text>
+<text x="495" y="1209" fill="#4B3475" font-family="Microsoft YaHei, sans-serif" font-size="30" font-weight="700" text-anchor="start"><tspan x="495" dy="0">12点更新</tspan></text>
+<text x="495" y="1248" fill="#5E6A7D" font-family="Microsoft YaHei, sans-serif" font-size="23" font-weight="400" text-anchor="start"><tspan x="495" dy="0">冻结0—12点决策，按相同规则重优化12—24点后缀</tspan></text>
+<rect x="105" y="1203" width="176" height="44" rx="22" fill="#4B3475"/>
+<text x="193" y="1233" fill="#FFFFFF" font-family="Microsoft YaHei, sans-serif" font-size="22" font-weight="700" text-anchor="middle"><tspan x="193" dy="0">建模与求解</tspan></text>
+<line x1="970" y1="1298" x2="970" y2="1333" stroke="#7255B7" stroke-width="6" marker-end="url(#arrow)"/>
+<rect x="308" y="1352" width="1340" height="130" rx="24" fill="#DCE5EF"/>
+<rect x="300" y="1342" width="1340" height="130" rx="24" fill="#FFFFFF" stroke="#CAD5E3" stroke-width="2" filter="url(#shadow)"/>
+<path d="M324,1342 H455 V1472 H324 Q300,1472 300,1448 V1366 Q300,1342 324,1342" fill="#EEE8FA"/>
+<circle cx="376" cy="1407" r="34" fill="#7255B7"/>
+<text x="376" y="1417" fill="#FFFFFF" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700" text-anchor="middle"><tspan x="376" dy="0">7</tspan></text>
+<text x="495" y="1391" fill="#4B3475" font-family="Microsoft YaHei, sans-serif" font-size="30" font-weight="700" text-anchor="start"><tspan x="495" dy="0">18点更新</tspan></text>
+<text x="495" y="1430" fill="#5E6A7D" font-family="Microsoft YaHei, sans-serif" font-size="23" font-weight="400" text-anchor="start"><tspan x="495" dy="0">冻结0—18点决策，重优化最后6小时并完成当日物理执行</tspan></text>
+<rect x="105" y="1385" width="176" height="44" rx="22" fill="#4B3475"/>
+<text x="193" y="1415" fill="#FFFFFF" font-family="Microsoft YaHei, sans-serif" font-size="22" font-weight="700" text-anchor="middle"><tspan x="193" dy="0">结果与验证</tspan></text>
+<line x1="970" y1="1480" x2="970" y2="1515" stroke="#7255B7" stroke-width="6" marker-end="url(#arrow)"/>
+<rect x="308" y="1534" width="1340" height="130" rx="24" fill="#DCE5EF"/>
+<rect x="300" y="1524" width="1340" height="130" rx="24" fill="#FFFFFF" stroke="#CAD5E3" stroke-width="2" filter="url(#shadow)"/>
+<path d="M324,1524 H455 V1654 H324 Q300,1654 300,1630 V1548 Q300,1524 324,1524" fill="#EEE8FA"/>
+<circle cx="376" cy="1589" r="34" fill="#7255B7"/>
+<text x="376" y="1599" fill="#FFFFFF" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700" text-anchor="middle"><tspan x="376" dy="0">8</tspan></text>
+<text x="495" y="1573" fill="#4B3475" font-family="Microsoft YaHei, sans-serif" font-size="30" font-weight="700" text-anchor="start"><tspan x="495" dy="0">结算与选择</tspan></text>
+<text x="495" y="1612" fill="#5E6A7D" font-family="Microsoft YaHei, sans-serif" font-size="23" font-weight="400" text-anchor="start"><tspan x="495" dy="0">分别核算计划费、调整费和紧急购电费，比较S0—S3E并输出最终S3E</tspan></text>
+<rect x="105" y="1567" width="176" height="44" rx="22" fill="#4B3475"/>
+<text x="193" y="1597" fill="#FFFFFF" font-family="Microsoft YaHei, sans-serif" font-size="22" font-weight="700" text-anchor="middle"><tspan x="193" dy="0">结果与验证</tspan></text>
+<text x="950" y="1740" fill="#5E6A7D" font-family="Microsoft YaHei, sans-serif" font-size="22" font-weight="400" text-anchor="middle"><tspan x="950" dy="0">图3A  问题3从数据输入、模型求解到结果审计的完整流程</tspan></text>
+</svg>

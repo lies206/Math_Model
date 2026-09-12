@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1500" viewBox="0 0 2200 1500">
+<defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#7255B7"/></marker></defs>
+<rect width="2200" height="1500" fill="#F5F8FC"/>
+<rect width="2200" height="170" fill="#4B3475"/>
+<text x="95" y="90" fill="#FFFFFF" font-family="Microsoft YaHei, sans-serif" font-size="50" font-weight="700" text-anchor="start"><tspan x="95" dy="0">问题3｜模型逻辑图</tspan></text>
+<text x="2105" y="82" fill="#D7E4EF" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="400" text-anchor="end"><tspan x="2105" dy="0">输入 → 决策 → 执行 → 反馈 → 输出</tspan></text>
+<text x="90" y="230" fill="#7255B7" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700" text-anchor="start"><tspan x="90" dy="0">输入层</tspan></text>
+<text x="720" y="230" fill="#7255B7" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700" text-anchor="start"><tspan x="720" dy="0">决策与执行层</tspan></text>
+<text x="1720" y="230" fill="#7255B7" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700" text-anchor="start"><tspan x="1720" dy="0">结果层</tspan></text>
+<rect x="87" y="279" width="440" height="185" rx="24" fill="#DCE5EF"/>
+<rect x="80" y="270" width="440" height="185" rx="24" fill="#FFFFFF" stroke="#CAD5E3" stroke-width="3"/>
+<path d="M92,270 V455 H104 V270 Z" fill="#7255B7"/>
+<text x="118" y="322" fill="#4B3475" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700" text-anchor="start"><tspan x="118" dy="0">多时点预测</tspan></text>
+<text x="118" y="364" fill="#5E6A7D" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" text-anchor="start"><tspan x="118" dy="0">0/6/12/18点光伏预测</tspan></text>
+<rect x="87" y="514" width="440" height="185" rx="24" fill="#DCE5EF"/>
+<rect x="80" y="505" width="440" height="185" rx="24" fill="#FFFFFF" stroke="#CAD5E3" stroke-width="3"/>
+<path d="M92,505 V690 H104 V505 Z" fill="#7255B7"/>
+<text x="118" y="557" fill="#4B3475" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700" text-anchor="start"><tspan x="118" dy="0">在线观测</tspan></text>
+<text x="118" y="599" fill="#5E6A7D" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" text-anchor="start"><tspan x="118" dy="0">已执行负荷、光伏偏差</tspan></text>
+<rect x="87" y="749" width="440" height="185" rx="24" fill="#DCE5EF"/>
+<rect x="80" y="740" width="440" height="185" rx="24" fill="#FFFFFF" stroke="#CAD5E3" stroke-width="3"/>
+<path d="M92,740 V925 H104 V740 Z" fill="#7255B7"/>
+<text x="118" y="792" fill="#4B3475" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700" text-anchor="start"><tspan x="118" dy="0">状态信息</tspan></text>
+<text x="118" y="834" fill="#5E6A7D" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" text-anchor="start"><tspan x="118" dy="0">当前真实SOC与冻结前缀</tspan></text>
+<rect x="1687" y="279" width="440" height="185" rx="24" fill="#DCE5EF"/>
+<rect x="1680" y="270" width="440" height="185" rx="24" fill="#EEE8FA" stroke="#7255B7" stroke-width="3"/>
+<path d="M1692,270 V455 H1704 V270 Z" fill="#7255B7"/>
+<text x="1718" y="322" fill="#4B3475" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700" text-anchor="start"><tspan x="1718" dy="0">预测改善</tspan></text>
+<text x="1718" y="364" fill="#5E6A7D" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" text-anchor="start"><tspan x="1718" dy="0">光伏RMSE 383.027→42.923 kW</tspan></text>
+<rect x="1687" y="514" width="440" height="185" rx="24" fill="#DCE5EF"/>
+<rect x="1680" y="505" width="440" height="185" rx="24" fill="#EEE8FA" stroke="#7255B7" stroke-width="3"/>
+<path d="M1692,505 V690 H1704 V505 Z" fill="#7255B7"/>
+<text x="1718" y="557" fill="#4B3475" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700" text-anchor="start"><tspan x="1718" dy="0">应急削减</tspan></text>
+<text x="1718" y="599" fill="#5E6A7D" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" text-anchor="start"><tspan x="1718" dy="0">较S0减少517,594.567 kWh</tspan></text>
+<rect x="1687" y="749" width="440" height="185" rx="24" fill="#DCE5EF"/>
+<rect x="1680" y="740" width="440" height="185" rx="24" fill="#EEE8FA" stroke="#7255B7" stroke-width="3"/>
+<path d="M1692,740 V925 H1704 V740 Z" fill="#7255B7"/>
+<text x="1718" y="792" fill="#4B3475" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700" text-anchor="start"><tspan x="1718" dy="0">最终费用</tspan></text>
+<text x="1718" y="834" fill="#5E6A7D" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" text-anchor="start"><tspan x="1718" dy="0">S3E：13,706,981.998元</tspan></text>
+<rect x="688" y="280" width="820" height="410" rx="28" fill="#D7E2EC"/>
+<rect x="680" y="270" width="820" height="410" rx="28" fill="#FFFFFF" stroke="#7255B7" stroke-width="4"/>
+<path d="M708,270 H1472 Q1500,270 1500,298 V352 H680 V298 Q680,270 708,270" fill="#4B3475"/>
+<text x="1090" y="324" fill="#FFFFFF" font-family="Microsoft YaHei, sans-serif" font-size="32" font-weight="700" text-anchor="middle"><tspan x="1090" dy="0">滚动MPC决策</tspan></text>
+<circle cx="738" cy="400" r="10" fill="#26A6A1"/>
+<text x="772" y="408" fill="#172033" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="400" text-anchor="start"><tspan x="772" dy="0">预测：观测锚点 + 线性插值</tspan></text>
+<circle cx="738" cy="464" r="10" fill="#26A6A1"/>
+<text x="772" y="472" fill="#172033" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="400" text-anchor="start"><tspan x="772" dy="0">决策：只优化尚未执行的后缀</tspan></text>
+<circle cx="738" cy="528" r="10" fill="#26A6A1"/>
+<text x="772" y="536" fill="#172033" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="400" text-anchor="start"><tspan x="772" dy="0">结算：下调50%，上调150%，紧急5倍</tspan></text>
+<circle cx="738" cy="592" r="10" fill="#26A6A1"/>
+<text x="772" y="600" fill="#172033" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="400" text-anchor="start"><tspan x="772" dy="0">约束：充放电互斥、日终SOC目标</tspan></text>
+<rect x="687" y="779" width="820" height="275" rx="24" fill="#DCE5EF"/>
+<rect x="680" y="770" width="820" height="275" rx="24" fill="#EEE8FA" stroke="#7255B7" stroke-width="3"/>
+<path d="M692,770 V1045 H704 V770 Z" fill="#7255B7"/>
+<text x="718" y="822" fill="#4B3475" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700" text-anchor="start"><tspan x="718" dy="0">0 → 6 → 12 → 18 → 24时闭环</tspan></text>
+<text x="718" y="864" fill="#5E6A7D" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" text-anchor="start"><tspan x="718" dy="0">每到发布时间先冻结历史、继承实际SOC，再用最新预测更新未来购电和储能动</tspan><tspan x="718" dy="30">作</tspan></text>
+<rect x="687" y="1149" width="820" height="210" rx="24" fill="#DCE5EF"/>
+<rect x="680" y="1140" width="820" height="210" rx="24" fill="#FFFFFF" stroke="#CAD5E3" stroke-width="3"/>
+<path d="M692,1140 V1350 H704 V1140 Z" fill="#7255B7"/>
+<text x="718" y="1192" fill="#4B3475" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700" text-anchor="start"><tspan x="718" dy="0">信息价值与事件触发</tspan></text>
+<text x="718" y="1234" fill="#5E6A7D" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" text-anchor="start"><tspan x="718" dy="0">比较更新收益与调整成本；S3E仅在净收益为正时保留调整</tspan></text>
+<line x1="530" y1="362" x2="660" y2="362" stroke="#7255B7" stroke-width="6" marker-end="url(#arrow)"/>
+<line x1="530" y1="597" x2="660" y2="597" stroke="#7255B7" stroke-width="6" marker-end="url(#arrow)"/>
+<line x1="530" y1="832" x2="660" y2="630" stroke="#7255B7" stroke-width="6" marker-end="url(#arrow)"/>
+<line x1="1090" y1="690" x2="1090" y2="750" stroke="#7255B7" stroke-width="6" marker-end="url(#arrow)"/>
+<line x1="1512" y1="907" x2="1658" y2="362" stroke="#7255B7" stroke-width="6" marker-end="url(#arrow)"/>
+<line x1="1512" y1="907" x2="1658" y2="597" stroke="#7255B7" stroke-width="6" marker-end="url(#arrow)"/>
+<line x1="1512" y1="907" x2="1658" y2="832" stroke="#7255B7" stroke-width="6" marker-end="url(#arrow)"/>
+<line x1="1090" y1="1055" x2="1090" y2="1120" stroke="#7255B7" stroke-width="6" marker-end="url(#arrow)"/>
+<polyline points="668,1245 585,1245 585,470 660,470" fill="none" stroke="#26A6A1" stroke-width="5" marker-end="url(#arrow)"/>
+<text x="590" y="1218" fill="#26A6A1" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="700" text-anchor="end"><tspan x="590" dy="0">状态/信息反馈</tspan></text>
+<text x="1100" y="1458" fill="#5E6A7D" font-family="Microsoft YaHei, sans-serif" font-size="22" font-weight="400" text-anchor="middle"><tspan x="1100" dy="0">图3B  问题3输入、优化决策、实际执行与反馈输出之间的逻辑关系</tspan></text>
+</svg>

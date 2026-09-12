@@ -1,0 +1,282 @@
+{
+  "input_whitelist": [
+    "附件1.xlsx",
+    "附件2.xlsx",
+    "附件3.xlsx"
+  ],
+  "forbidden_input": "附件4.xlsx（未打开）",
+  "time_alignment": "附件2的0:10对应0:00-0:10、0:00(+1)对应23:50-24:00；附件3预测1小时对应发布后第1个整点，线性插值到区间终点",
+  "units": {
+    "power": "kW",
+    "interval": "10 min",
+    "energy_factor_h": 0.16666666666666666,
+    "energy": "kWh"
+  },
+  "load_prediction": {
+    "windows_days": [
+      7,
+      14,
+      21,
+      28
+    ],
+    "decays": [
+      0.65,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "rolling_validation_days": 28,
+    "selected_config_counts_2025_02_01_to_12_31": {
+      "w14_decay0.65": 137,
+      "w21_decay0.65": 41,
+      "w21_decay0.80": 6,
+      "w21_decay0.90": 2,
+      "w21_decay1.00": 1,
+      "w28_decay0.65": 67,
+      "w28_decay0.80": 8,
+      "w28_decay0.90": 11,
+      "w28_decay1.00": 32,
+      "w7_decay0.65": 29
+    },
+    "accuracy_by_release": {
+      "0:00": {
+        "sample_count_10min": 48096,
+        "mae_kw": 169.19270889283382,
+        "rmse_kw": 237.59579079008012,
+        "mean_error_kw": -2.591502956342278
+      },
+      "6:00": {
+        "sample_count_10min": 36072,
+        "mae_kw": 154.2222471817146,
+        "rmse_kw": 204.35879809682024,
+        "mean_error_kw": -5.093262162084947
+      },
+      "12:00": {
+        "sample_count_10min": 24048,
+        "mae_kw": 168.69584683367884,
+        "rmse_kw": 223.61534559789516,
+        "mean_error_kw": -8.355296397489234
+      },
+      "18:00": {
+        "sample_count_10min": 12024,
+        "mae_kw": 138.16839433654633,
+        "rmse_kw": 177.7116567703122,
+        "mean_error_kw": -2.571671742309402
+      }
+    },
+    "future_leakage_detected": false
+  },
+  "pv_accuracy_by_release": {
+    "0:00": {
+      "sample_count_10min": 48096,
+      "mae_kw": 197.49097249805948,
+      "rmse_kw": 383.0269248527167,
+      "mean_error_kw": -29.67622281478709
+    },
+    "6:00": {
+      "sample_count_10min": 36072,
+      "mae_kw": 158.5164766434723,
+      "rmse_kw": 271.37144712169965,
+      "mean_error_kw": -13.41183948076071
+    },
+    "12:00": {
+      "sample_count_10min": 24048,
+      "mae_kw": 75.2527363855622,
+      "rmse_kw": 139.72804450189918,
+      "mean_error_kw": 1.7109362940785084
+    },
+    "18:00": {
+      "sample_count_10min": 12024,
+      "mae_kw": 10.015140843313374,
+      "rmse_kw": 42.92335290156186,
+      "mean_error_kw": 9.929809189953426
+    }
+  },
+  "strategy_comparison": {
+    "S0": {
+      "plan_purchase_kwh": 20379830.849218786,
+      "final_contracted_purchase_kwh": 20379830.849218786,
+      "actual_contract_grid_used_kwh": 19783582.252772197,
+      "emergency_purchase_kwh": 578036.0225965685,
+      "total_physical_grid_purchase_kwh": 20361618.275368765,
+      "plan_cost_yuan": 12330794.494594097,
+      "downward_adjustment_cost_yuan": 0.0,
+      "upward_adjustment_cost_yuan": 0.0,
+      "adjustment_cost_yuan": 0.0,
+      "emergency_cost_yuan": 3425744.067215649,
+      "total_cost_yuan": 15756538.561809747,
+      "downward_adjustment_kwh": 0.0,
+      "upward_adjustment_kwh": 0.0,
+      "total_adjustment_kwh": 0.0,
+      "adjustment_interval_count": 0,
+      "adjustment_event_count": 0,
+      "emergency_interval_count": 3212,
+      "emergency_day_count": 301,
+      "unused_contracted_energy_kwh": 596248.596446587,
+      "charge_kwh": 6642572.364517987,
+      "discharge_kwh": 5381073.36433905,
+      "pv_consumed_kwh": 17907960.21406017,
+      "pv_curtailed_kwh": 1160929.7802231656,
+      "event_triggered": false
+    },
+    "S1": {
+      "plan_purchase_kwh": 20357977.942468833,
+      "final_contracted_purchase_kwh": 20988523.47833668,
+      "actual_contract_grid_used_kwh": 20220180.691128127,
+      "emergency_purchase_kwh": 201464.64960381403,
+      "total_physical_grid_purchase_kwh": 20421645.34073194,
+      "plan_cost_yuan": 12326183.04260017,
+      "downward_adjustment_cost_yuan": 9903.79085680054,
+      "upward_adjustment_cost_yuan": 713988.1951164899,
+      "adjustment_cost_yuan": 723891.9859732904,
+      "emergency_cost_yuan": 1148193.0329872782,
+      "total_cost_yuan": 14198268.061560739,
+      "downward_adjustment_kwh": 47645.06509887449,
+      "upward_adjustment_kwh": 678190.6009667234,
+      "total_adjustment_kwh": 725835.6660655979,
+      "adjustment_interval_count": 8839,
+      "adjustment_event_count": 334,
+      "emergency_interval_count": 2151,
+      "emergency_day_count": 283,
+      "unused_contracted_energy_kwh": 768342.7872085551,
+      "charge_kwh": 6692474.427576928,
+      "discharge_kwh": 5422058.62750508,
+      "pv_consumed_kwh": 17856849.948589906,
+      "pv_curtailed_kwh": 1212040.0456934262,
+      "event_triggered": false
+    },
+    "S2": {
+      "plan_purchase_kwh": 20357464.48874011,
+      "final_contracted_purchase_kwh": 21060923.50736373,
+      "actual_contract_grid_used_kwh": 20266742.250429887,
+      "emergency_purchase_kwh": 161894.9132964089,
+      "total_physical_grid_purchase_kwh": 20428637.163726296,
+      "plan_cost_yuan": 12325161.133909142,
+      "downward_adjustment_cost_yuan": 15345.4871251475,
+      "upward_adjustment_cost_yuan": 820691.5929478032,
+      "adjustment_cost_yuan": 836037.0800729506,
+      "emergency_cost_yuan": 875009.7306439534,
+      "total_cost_yuan": 14036207.944626046,
+      "downward_adjustment_kwh": 73705.40852084896,
+      "upward_adjustment_kwh": 777164.4271444684,
+      "total_adjustment_kwh": 850869.8356653174,
+      "adjustment_interval_count": 13603,
+      "adjustment_event_count": 648,
+      "emergency_interval_count": 1972,
+      "emergency_day_count": 276,
+      "unused_contracted_energy_kwh": 794181.2569338402,
+      "charge_kwh": 6717620.231329182,
+      "discharge_kwh": 5440903.186709665,
+      "pv_consumed_kwh": 17856159.370143216,
+      "pv_curtailed_kwh": 1212730.6241401157,
+      "event_triggered": false
+    },
+    "S3": {
+      "plan_purchase_kwh": 20353039.54288651,
+      "final_contracted_purchase_kwh": 21097646.00372752,
+      "actual_contract_grid_used_kwh": 20381450.962069828,
+      "emergency_purchase_kwh": 61117.04576650433,
+      "total_physical_grid_purchase_kwh": 20442568.00783633,
+      "plan_cost_yuan": 12317145.702219877,
+      "downward_adjustment_cost_yuan": 39791.41622034811,
+      "upward_adjustment_cost_yuan": 1023364.3653385704,
+      "adjustment_cost_yuan": 1063155.7815589188,
+      "emergency_cost_yuan": 330486.6975875264,
+      "total_cost_yuan": 13710788.181366324,
+      "downward_adjustment_kwh": 174703.35461439536,
+      "upward_adjustment_kwh": 919309.8154554085,
+      "total_adjustment_kwh": 1094013.170069804,
+      "adjustment_interval_count": 17636,
+      "adjustment_event_count": 972,
+      "emergency_interval_count": 1107,
+      "emergency_day_count": 251,
+      "unused_contracted_energy_kwh": 716195.041657696,
+      "charge_kwh": 6773873.756664565,
+      "discharge_kwh": 5486793.5230359975,
+      "pv_consumed_kwh": 17852591.715042237,
+      "pv_curtailed_kwh": 1216298.279241097,
+      "event_triggered": false
+    },
+    "S3E": {
+      "plan_purchase_kwh": 20442244.99710356,
+      "final_contracted_purchase_kwh": 21317885.17577424,
+      "actual_contract_grid_used_kwh": 20443252.29380672,
+      "emergency_purchase_kwh": 60441.455386636255,
+      "total_physical_grid_purchase_kwh": 20503693.749193355,
+      "plan_cost_yuan": 12359701.235481396,
+      "downward_adjustment_cost_yuan": 5830.948033750439,
+      "upward_adjustment_cost_yuan": 1014138.7510996752,
+      "adjustment_cost_yuan": 1019969.6991334257,
+      "emergency_cost_yuan": 327311.0637138893,
+      "total_cost_yuan": 13706981.998328712,
+      "downward_adjustment_kwh": 28528.91632672071,
+      "upward_adjustment_kwh": 904169.0949974,
+      "total_adjustment_kwh": 932698.0113241207,
+      "adjustment_interval_count": 16716,
+      "adjustment_event_count": 563,
+      "emergency_interval_count": 1103,
+      "emergency_day_count": 251,
+      "unused_contracted_energy_kwh": 874632.8819675206,
+      "charge_kwh": 7127123.189674514,
+      "discharge_kwh": 5773348.605577616,
+      "pv_consumed_kwh": 17858160.324153543,
+      "pv_curtailed_kwh": 1210729.6701297928,
+      "event_triggered": true
+    }
+  },
+  "marginal_information_value": {
+    "delta_C_6": {
+      "before_cost_yuan": 15756538.561809747,
+      "after_cost_yuan": 14198268.061560739,
+      "marginal_value_yuan": 1558270.5002490077,
+      "reduces_actual_total_cost": true
+    },
+    "delta_C_12": {
+      "before_cost_yuan": 14198268.061560739,
+      "after_cost_yuan": 14036207.944626046,
+      "marginal_value_yuan": 162060.1169346925,
+      "reduces_actual_total_cost": true
+    },
+    "delta_C_18": {
+      "before_cost_yuan": 14036207.944626046,
+      "after_cost_yuan": 13710788.181366324,
+      "marginal_value_yuan": 325419.7632597219,
+      "reduces_actual_total_cost": true
+    }
+  },
+  "selected_strategy_for_result3": "S3E",
+  "audit": {
+    "max_power_balance_error_kwh": 2.2737367544323206e-13,
+    "max_soc_dynamics_error_kwh": 9.094947017729282e-13,
+    "soc_min_kwh": 1200.0,
+    "soc_max_kwh": 10800.0,
+    "soc_bounds_ok": true,
+    "max_charge_interval_kwh": 833.3333333333333,
+    "max_discharge_interval_kwh": 833.3333333333333,
+    "power_limits_ok": true,
+    "max_simultaneous_charge_discharge_kwh": 0.0,
+    "no_simultaneous_charge_discharge": true,
+    "initial_soc_kwh": 6000.0,
+    "final_soc_kwh": 10379.086731933598,
+    "period_count_per_day": 144,
+    "all_365_days_present": true,
+    "ten_minute_energy_factor_hours": 0.16666666666666666,
+    "interval_power_limit_kwh": 833.3333333333333,
+    "price_source": "附件1.xlsx",
+    "actual_source": "附件2.xlsx",
+    "pv_forecast_source": "附件3.xlsx",
+    "attachment4_opened": false,
+    "no_reverse_sale": true,
+    "max_contract_partition_error_kwh": 0.0,
+    "max_pv_partition_error_kwh": 0.0,
+    "soc_day_continuity_error_kwh": 0.0,
+    "max_update_soc_inheritance_error_kwh": 0.0,
+    "executed_intervals_frozen": true,
+    "load_forecast_leakage_detected": false,
+    "pv_future_actual_used_in_optimization": false,
+    "all_arrays_finite": true,
+    "time_alignment": "附件2的0:10对应0:00-0:10、0:00(+1)对应23:50-24:00；附件3预测1小时对应发布后第1个整点，线性插值到区间终点",
+    "daily_planned_terminal_policy": "每次优化以当日0:00实际SOC为24:00目标；实际偏差由下一日当前SOC继承",
+    "all_required_checks_passed": true
+  }
+}

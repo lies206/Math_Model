@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1500" viewBox="0 0 2200 1500">
+<defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#2176AE"/></marker></defs>
+<rect width="2200" height="1500" fill="#F5F8FC"/>
+<rect width="2200" height="170" fill="#173C5B"/>
+<text x="95" y="90" fill="#FFFFFF" font-family="Microsoft YaHei, sans-serif" font-size="50" font-weight="700" text-anchor="start"><tspan x="95" dy="0">问题4｜模型逻辑图</tspan></text>
+<text x="2105" y="82" fill="#D7E4EF" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="400" text-anchor="end"><tspan x="2105" dy="0">输入 → 决策 → 执行 → 反馈 → 输出</tspan></text>
+<text x="90" y="230" fill="#2176AE" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700" text-anchor="start"><tspan x="90" dy="0">输入层</tspan></text>
+<text x="720" y="230" fill="#2176AE" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700" text-anchor="start"><tspan x="720" dy="0">决策与执行层</tspan></text>
+<text x="1720" y="230" fill="#2176AE" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700" text-anchor="start"><tspan x="1720" dy="0">结果层</tspan></text>
+<rect x="87" y="279" width="440" height="185" rx="24" fill="#DCE5EF"/>
+<rect x="80" y="270" width="440" height="185" rx="24" fill="#FFFFFF" stroke="#CAD5E3" stroke-width="3"/>
+<path d="M92,270 V455 H104 V270 Z" fill="#2176AE"/>
+<text x="118" y="322" fill="#173C5B" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700" text-anchor="start"><tspan x="118" dy="0">动态电价 p(d,t)</tspan></text>
+<text x="118" y="364" fill="#5E6A7D" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" text-anchor="start"><tspan x="118" dy="0">全年逐日144格价格曲线</tspan></text>
+<rect x="87" y="514" width="440" height="185" rx="24" fill="#DCE5EF"/>
+<rect x="80" y="505" width="440" height="185" rx="24" fill="#FFFFFF" stroke="#CAD5E3" stroke-width="3"/>
+<path d="M92,505 V690 H104 V505 Z" fill="#2176AE"/>
+<text x="118" y="557" fill="#173C5B" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700" text-anchor="start"><tspan x="118" dy="0">负荷与光伏</tspan></text>
+<text x="118" y="599" fill="#5E6A7D" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" text-anchor="start"><tspan x="118" dy="0">实际值及多时点预测</tspan></text>
+<rect x="87" y="749" width="440" height="185" rx="24" fill="#DCE5EF"/>
+<rect x="80" y="740" width="440" height="185" rx="24" fill="#FFFFFF" stroke="#CAD5E3" stroke-width="3"/>
+<path d="M92,740 V925 H104 V740 Z" fill="#2176AE"/>
+<text x="118" y="792" fill="#173C5B" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700" text-anchor="start"><tspan x="118" dy="0">预测残差</tspan></text>
+<text x="118" y="834" fill="#5E6A7D" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" text-anchor="start"><tspan x="118" dy="0">误差分布与发布时间精度</tspan></text>
+<rect x="1687" y="279" width="440" height="185" rx="24" fill="#DCE5EF"/>
+<rect x="1680" y="270" width="440" height="185" rx="24" fill="#E1F0F8" stroke="#2176AE" stroke-width="3"/>
+<path d="M1692,270 V455 H1704 V270 Z" fill="#2176AE"/>
+<text x="1718" y="322" fill="#173C5B" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700" text-anchor="start"><tspan x="1718" dy="0">策略A</tspan></text>
+<text x="1718" y="364" fill="#5E6A7D" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" text-anchor="start"><tspan x="1718" dy="0">17,644,414.507元</tspan></text>
+<rect x="1687" y="514" width="440" height="185" rx="24" fill="#DCE5EF"/>
+<rect x="1680" y="505" width="440" height="185" rx="24" fill="#E1F0F8" stroke="#2176AE" stroke-width="3"/>
+<path d="M1692,505 V690 H1704 V505 Z" fill="#2176AE"/>
+<text x="1718" y="557" fill="#173C5B" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700" text-anchor="start"><tspan x="1718" dy="0">策略B</tspan></text>
+<text x="1718" y="599" fill="#5E6A7D" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" text-anchor="start"><tspan x="1718" dy="0">15,138,439.096元，节省14.203%</tspan></text>
+<rect x="1687" y="749" width="440" height="185" rx="24" fill="#DCE5EF"/>
+<rect x="1680" y="740" width="440" height="185" rx="24" fill="#E1F0F8" stroke="#2176AE" stroke-width="3"/>
+<path d="M1692,740 V925 H1704 V740 Z" fill="#2176AE"/>
+<text x="1718" y="792" fill="#173C5B" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700" text-anchor="start"><tspan x="1718" dy="0">策略C</tspan></text>
+<text x="1718" y="834" fill="#5E6A7D" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" text-anchor="start"><tspan x="1718" dy="0">14,345,065.752元，节省18.699%</tspan></text>
+<rect x="688" y="280" width="820" height="410" rx="28" fill="#D7E2EC"/>
+<rect x="680" y="270" width="820" height="410" rx="28" fill="#FFFFFF" stroke="#2176AE" stroke-width="4"/>
+<path d="M708,270 H1472 Q1500,270 1500,298 V352 H680 V298 Q680,270 708,270" fill="#173C5B"/>
+<text x="1090" y="324" fill="#FFFFFF" font-family="Microsoft YaHei, sans-serif" font-size="32" font-weight="700" text-anchor="middle"><tspan x="1090" dy="0">动态价格感知优化</tspan></text>
+<circle cx="738" cy="400" r="10" fill="#E4A93A"/>
+<text x="772" y="408" fill="#172033" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="400" text-anchor="start"><tspan x="772" dy="0">问题4-2：因果预测 + 日前储能优化</tspan></text>
+<circle cx="738" cy="464" r="10" fill="#E4A93A"/>
+<text x="772" y="472" fill="#172033" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="400" text-anchor="start"><tspan x="772" dy="0">问题4-3：多时点预测 + 滚动MPC</tspan></text>
+<circle cx="738" cy="528" r="10" fill="#E4A93A"/>
+<text x="772" y="536" fill="#172033" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="400" text-anchor="start"><tspan x="772" dy="0">价格机制：低价充电、高价放电</tspan></text>
+<circle cx="738" cy="592" r="10" fill="#E4A93A"/>
+<text x="772" y="600" fill="#172033" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="400" text-anchor="start"><tspan x="772" dy="0">共同约束：平衡、SOC、功率、无反送</tspan></text>
+<rect x="687" y="779" width="820" height="275" rx="24" fill="#DCE5EF"/>
+<rect x="680" y="770" width="820" height="275" rx="24" fill="#E1F0F8" stroke="#2176AE" stroke-width="3"/>
+<path d="M692,770 V1045 H704 V770 Z" fill="#2176AE"/>
+<text x="718" y="822" fill="#173C5B" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700" text-anchor="start"><tspan x="718" dy="0">A / B / C 对照实验</tspan></text>
+<text x="718" y="864" fill="#5E6A7D" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" text-anchor="start"><tspan x="718" dy="0">A不感知动态价；B使用动态价储能优化；C进一步叠加0/6/12/18点滚动修正</tspan></text>
+<rect x="687" y="1149" width="820" height="210" rx="24" fill="#DCE5EF"/>
+<rect x="680" y="1140" width="820" height="210" rx="24" fill="#FFFFFF" stroke="#CAD5E3" stroke-width="3"/>
+<path d="M692,1140 V1350 H704 V1140 Z" fill="#2176AE"/>
+<text x="718" y="1192" fill="#173C5B" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700" text-anchor="start"><tspan x="718" dy="0">价格—状态—预测闭环</tspan></text>
+<text x="718" y="1234" fill="#5E6A7D" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" text-anchor="start"><tspan x="718" dy="0">每日价格决定充放电时序；实际SOC与最新预测继续驱动后续决策</tspan></text>
+<line x1="530" y1="362" x2="660" y2="362" stroke="#2176AE" stroke-width="6" marker-end="url(#arrow)"/>
+<line x1="530" y1="597" x2="660" y2="597" stroke="#2176AE" stroke-width="6" marker-end="url(#arrow)"/>
+<line x1="530" y1="832" x2="660" y2="630" stroke="#2176AE" stroke-width="6" marker-end="url(#arrow)"/>
+<line x1="1090" y1="690" x2="1090" y2="750" stroke="#2176AE" stroke-width="6" marker-end="url(#arrow)"/>
+<line x1="1512" y1="907" x2="1658" y2="362" stroke="#2176AE" stroke-width="6" marker-end="url(#arrow)"/>
+<line x1="1512" y1="907" x2="1658" y2="597" stroke="#2176AE" stroke-width="6" marker-end="url(#arrow)"/>
+<line x1="1512" y1="907" x2="1658" y2="832" stroke="#2176AE" stroke-width="6" marker-end="url(#arrow)"/>
+<line x1="1090" y1="1055" x2="1090" y2="1120" stroke="#2176AE" stroke-width="6" marker-end="url(#arrow)"/>
+<polyline points="668,1245 585,1245 585,470 660,470" fill="none" stroke="#E4A93A" stroke-width="5" marker-end="url(#arrow)"/>
+<text x="590" y="1218" fill="#E4A93A" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="700" text-anchor="end"><tspan x="590" dy="0">状态/信息反馈</tspan></text>
+<text x="1100" y="1458" fill="#5E6A7D" font-family="Microsoft YaHei, sans-serif" font-size="22" font-weight="400" text-anchor="middle"><tspan x="1100" dy="0">图4B  问题4输入、优化决策、实际执行与反馈输出之间的逻辑关系</tspan></text>
+</svg>

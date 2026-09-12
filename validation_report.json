@@ -1,0 +1,141 @@
+{
+  "numeric": {
+    "problem1": {
+      "max_power_balance_error_kwh": 2.2737367544323206e-13,
+      "max_soc_dynamics_error_kwh": 8.313350008393172e-13,
+      "soc_min_kwh": 1200.0,
+      "soc_max_kwh": 10800.0,
+      "soc_bounds_ok": true,
+      "max_charge_interval_kwh": 833.3333333333333,
+      "max_discharge_interval_kwh": 715.6530333333333,
+      "power_limits_ok": true,
+      "max_simultaneous_charge_discharge_kwh": 0.0,
+      "no_simultaneous_charge_discharge": true,
+      "initial_soc_kwh": 6000.0,
+      "final_soc_kwh": 6000.0,
+      "boundary_soc_ok": true
+    },
+    "problem2": {
+      "max_power_balance_error_kwh": 2.2737367544323206e-13,
+      "max_soc_dynamics_error_kwh": 9.094947017729282e-13,
+      "cross_day_soc_continuity_error_kwh": 0.0,
+      "soc_min_kwh": 1200.0,
+      "soc_max_kwh": 10800.0,
+      "max_charge_interval_kwh": 833.3333333333333,
+      "max_discharge_interval_kwh": 833.3333333333333,
+      "max_simultaneous_charge_discharge_kwh": 0.0,
+      "min_plan_grid_kwh": 0.0,
+      "initial_soc_ok": true,
+      "boundary_soc_ok": true,
+      "soc_bounds_ok": true,
+      "power_limits_ok": true,
+      "no_simultaneous_charge_discharge": true,
+      "nonnegative_plan_ok": true,
+      "no_future_data_leakage": true,
+      "attachment1_price_repeated_daily": true,
+      "attachments3_and_4_used": false,
+      "all_checks_passed": true
+    },
+    "problem3": {
+      "max_power_balance_error_kwh": 3.296918293926865e-12,
+      "max_soc_dynamics_error_kwh": 1.1823431123048067e-11,
+      "soc_min_kwh": 1199.9999999999982,
+      "soc_max_kwh": 10800.000000000004,
+      "soc_bounds_ok": true,
+      "max_charge_interval_kwh": 833.3333333334082,
+      "max_discharge_interval_kwh": 833.3333333333343,
+      "power_limits_ok": true,
+      "max_simultaneous_charge_discharge_kwh": 0.0,
+      "no_simultaneous_charge_discharge": true,
+      "initial_soc_kwh": 6000.0,
+      "final_soc_kwh": 6000.0,
+      "daily_boundary_soc_error_kwh": 0.0,
+      "boundary_soc_ok": true
+    },
+    "problem4_2": {
+      "max_power_balance_error_kwh": 2.2737367544323206e-13,
+      "max_soc_dynamics_error_kwh": 1.0231815394945443e-12,
+      "soc_min_kwh": 1200.0,
+      "soc_max_kwh": 10800.0,
+      "soc_bounds_ok": true,
+      "max_charge_interval_kwh": 833.3333333333333,
+      "max_discharge_interval_kwh": 833.3333333333333,
+      "power_limits_ok": true,
+      "max_simultaneous_charge_discharge_kwh": 0.0,
+      "no_simultaneous_charge_discharge": true,
+      "initial_soc_kwh": 6000.0,
+      "final_soc_kwh": 6000.0,
+      "cross_day_soc_continuity_error_kwh": 0.0,
+      "boundary_soc_ok": true
+    },
+    "problem4_3": {
+      "max_power_balance_error_kwh": 2.1600499167107046e-12,
+      "max_soc_dynamics_error_kwh": 6.821210263296962e-12,
+      "soc_min_kwh": 1199.9999999999982,
+      "soc_max_kwh": 10800.000000000004,
+      "soc_bounds_ok": true,
+      "max_charge_interval_kwh": 833.3333333333374,
+      "max_discharge_interval_kwh": 833.3333333333343,
+      "power_limits_ok": true,
+      "max_simultaneous_charge_discharge_kwh": 8.61626559574353e-12,
+      "no_simultaneous_charge_discharge": true,
+      "initial_soc_kwh": 6000.0,
+      "final_soc_kwh": 6000.0,
+      "daily_boundary_soc_error_kwh": 0.0,
+      "boundary_soc_ok": true
+    }
+  },
+  "workbooks": {
+    "result1.xlsx": {
+      "sheet_names_ok": true,
+      "headers_ok": true,
+      "interval_labels_ok": true,
+      "header_styles_ok": true,
+      "plan_cells_complete": true,
+      "storage_date_count": null,
+      "emergency_date_count": null,
+      "complete": true
+    },
+    "result2.xlsx": {
+      "sheet_names_ok": true,
+      "headers_ok": true,
+      "interval_labels_ok": true,
+      "header_styles_ok": true,
+      "plan_cells_complete": true,
+      "storage_date_count": 334,
+      "emergency_date_count": 334,
+      "complete": true
+    },
+    "result3.xlsx": {
+      "sheet_names_ok": true,
+      "headers_ok": true,
+      "interval_labels_ok": true,
+      "header_styles_ok": true,
+      "plan_cells_complete": true,
+      "storage_date_count": 334,
+      "emergency_date_count": 334,
+      "complete": true
+    },
+    "result4-2.xlsx": {
+      "sheet_names_ok": true,
+      "headers_ok": true,
+      "interval_labels_ok": true,
+      "header_styles_ok": true,
+      "plan_cells_complete": true,
+      "storage_date_count": 334,
+      "emergency_date_count": 334,
+      "complete": true
+    },
+    "result4-3.xlsx": {
+      "sheet_names_ok": true,
+      "headers_ok": true,
+      "interval_labels_ok": true,
+      "header_styles_ok": true,
+      "plan_cells_complete": true,
+      "storage_date_count": 334,
+      "emergency_date_count": 334,
+      "complete": true
+    }
+  },
+  "all_checks_passed": true
+}

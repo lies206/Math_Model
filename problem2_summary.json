@@ -1,0 +1,217 @@
+{
+  "metrics": {
+    "plan_purchase_kwh": 23487011.887229472,
+    "emergency_purchase_kwh": 340789.536019954,
+    "total_physical_grid_purchase_kwh": 23827801.423249427,
+    "normal_cost_yuan": 14497122.037546787,
+    "emergency_cost_yuan": 2092975.5004497431,
+    "total_cost_yuan": 16590097.537996529,
+    "forecast_mae_kwh_per_interval": 106.2582660963956,
+    "forecast_rmse_kwh_per_interval": 152.98822227628622,
+    "charge_kwh": 6013092.10792744,
+    "discharge_kwh": 4870604.607421228,
+    "pv_consumed_kwh": 15909246.377636423,
+    "pv_curtailed_kwh": 3159643.6166469078,
+    "spilled_energy_kwh": 4746124.427776546,
+    "emergency_days": 108,
+    "max_emergency_interval_kwh": 966.5777260714284,
+    "emergency_share_of_grid_purchase": 0.014302181303535479,
+    "soc_min_kwh": 1200.0,
+    "soc_max_kwh": 10800.0,
+    "initial_soc_2025_01_01_kwh": 6000.0,
+    "final_soc_2025_12_31_kwh": 10800.0,
+    "leakage_detected": false,
+    "mean_strategy": {
+      "plan_purchase_kwh": 19632528.60146378,
+      "emergency_purchase_kwh": 1756175.4131780842,
+      "total_physical_grid_purchase_kwh": 21388704.014641862,
+      "normal_cost_yuan": 11835733.790550552,
+      "emergency_cost_yuan": 10676389.331376705,
+      "total_cost_yuan": 22512123.121927254,
+      "forecast_mae_kwh_per_interval": 89.27653260488323,
+      "forecast_rmse_kwh_per_interval": 122.08906892163951
+    },
+    "selected_alpha_counts": {
+      "0.60": 0,
+      "0.65": 2,
+      "0.70": 27,
+      "0.75": 33,
+      "0.80": 161,
+      "0.85": 90,
+      "0.90": 21,
+      "0.95": 0
+    },
+    "key_dates": {
+      "2025-03-20": {
+        "specified_plan_kwh": {
+          "10:00-10:10": 0.0,
+          "12:00-12:10": 595.701504722222,
+          "14:00-14:10": 0.0,
+          "16:00-16:10": 511.58245294394857,
+          "18:00-18:10": 697.5926590922619,
+          "20:00-20:10": 0.0
+        },
+        "daily_plan_kwh": 70252.17896622722,
+        "daily_normal_cost_yuan": 42577.322153153305,
+        "daily_emergency_cost_yuan": 0.0,
+        "charge_by_4h_kwh": [
+          124.84356340101576,
+          281.56753265879775,
+          6291.457016666666,
+          3332.6282648712913,
+          254.27635228938635,
+          10562.169705355098
+        ],
+        "discharge_by_4h_kwh": [
+          123.5247198893469,
+          4969.077345964848,
+          2777.3772166666668,
+          364.37577262499985,
+          5711.486021453712,
+          2940.182295946657
+        ],
+        "soc_0000_kwh": 10800.0,
+        "soc_2400_kwh": 10800.0,
+        "selected_alpha": 0.75,
+        "emergency_intervals": []
+      },
+      "2025-06-21": {
+        "specified_plan_kwh": {
+          "10:00-10:10": 0.0,
+          "12:00-12:10": 722.5704104761904,
+          "14:00-14:10": 0.0,
+          "16:00-16:10": 398.7997745238095,
+          "18:00-18:10": 629.7917773214285,
+          "20:00-20:10": 0.0
+        },
+        "daily_plan_kwh": 59489.71690727614,
+        "daily_normal_cost_yuan": 35665.209863466946,
+        "daily_emergency_cost_yuan": 0.0,
+        "charge_by_4h_kwh": [
+          0.0,
+          344.4542499999999,
+          1778.9457088477373,
+          0.0,
+          0.0,
+          8159.103481040561
+        ],
+        "discharge_by_4h_kwh": [
+          0.0,
+          1719.9539666666665,
+          0.0,
+          0.0,
+          4169.906849999999,
+          2438.9669696428555
+        ],
+        "soc_0000_kwh": 10800.0,
+        "soc_2400_kwh": 10800.0,
+        "selected_alpha": 0.9,
+        "emergency_intervals": []
+      },
+      "2025-09-23": {
+        "specified_plan_kwh": {
+          "10:00-10:10": 0.0,
+          "12:00-12:10": 473.50644477813876,
+          "14:00-14:10": 0.0,
+          "16:00-16:10": 541.2828326547618,
+          "18:00-18:10": 803.3441024285714,
+          "20:00-20:10": 17.999046785714427
+        },
+        "daily_plan_kwh": 70396.36752835271,
+        "daily_normal_cost_yuan": 43941.43840835424,
+        "daily_emergency_cost_yuan": 0.0,
+        "charge_by_4h_kwh": [
+          0.0,
+          20.81343839285705,
+          5336.986613574022,
+          5416.122975439814,
+          143.34055768268746,
+          10226.291525646677
+        ],
+        "discharge_by_4h_kwh": [
+          0.0,
+          6400.459485267638,
+          1896.6157166666662,
+          480.41525505952393,
+          5594.648618869047,
+          2754.1405638333335
+        ],
+        "soc_0000_kwh": 10800.0,
+        "soc_2400_kwh": 10800.0,
+        "selected_alpha": 0.8,
+        "emergency_intervals": []
+      },
+      "2025-12-21": {
+        "specified_plan_kwh": {
+          "10:00-10:10": 0.0,
+          "12:00-12:10": 896.5673321339285,
+          "14:00-14:10": 0.0,
+          "16:00-16:10": 769.2506208511904,
+          "18:00-18:10": 404.2813003544963,
+          "20:00-20:10": 0.0
+        },
+        "daily_plan_kwh": 89447.98078533204,
+        "daily_normal_cost_yuan": 56127.80833298627,
+        "daily_emergency_cost_yuan": 25766.911699374352,
+        "charge_by_4h_kwh": [
+          106.17854252362713,
+          845.2789493541666,
+          5034.087507005952,
+          7205.68513408365,
+          0.0,
+          10578.888108338888
+        ],
+        "discharge_by_4h_kwh": [
+          426.873169959401,
+          2099.0387007211193,
+          6884.768697740492,
+          2483.215302011905,
+          7008.682236160384,
+          430.69118938707487
+        ],
+        "soc_0000_kwh": 10800.0,
+        "soc_2400_kwh": 10711.69608830857,
+        "selected_alpha": 0.85,
+        "emergency_intervals": [
+          {
+            "interval": "7:50-8:10",
+            "amount_kwh": 108.4278444553571
+          },
+          {
+            "interval": "9:50-10:50",
+            "amount_kwh": 1699.4083155286073
+          },
+          {
+            "interval": "20:00-20:50",
+            "amount_kwh": 2442.3558359164963
+          },
+          {
+            "interval": "21:10-21:50",
+            "amount_kwh": 81.3700884672619
+          }
+        ]
+      }
+    }
+  },
+  "audit": {
+    "max_power_balance_error_kwh": 2.2737367544323206e-13,
+    "max_soc_dynamics_error_kwh": 9.094947017729282e-13,
+    "cross_day_soc_continuity_error_kwh": 0.0,
+    "soc_min_kwh": 1200.0,
+    "soc_max_kwh": 10800.0,
+    "max_charge_interval_kwh": 833.3333333333333,
+    "max_discharge_interval_kwh": 833.3333333333333,
+    "max_simultaneous_charge_discharge_kwh": 0.0,
+    "min_plan_grid_kwh": 0.0,
+    "initial_soc_ok": true,
+    "boundary_soc_ok": true,
+    "soc_bounds_ok": true,
+    "power_limits_ok": true,
+    "no_simultaneous_charge_discharge": true,
+    "nonnegative_plan_ok": true,
+    "no_future_data_leakage": true,
+    "attachment1_price_repeated_daily": true,
+    "attachments3_and_4_used": false,
+    "all_checks_passed": true
+  }
+}

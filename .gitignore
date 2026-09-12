@@ -1,0 +1,17 @@
+# Python environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local temporary and rendering artifacts
+tmp/
+*.inspect.ndjson
+
+# Editor and operating-system artifacts
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+~$*.docx
+~$*.xlsx
